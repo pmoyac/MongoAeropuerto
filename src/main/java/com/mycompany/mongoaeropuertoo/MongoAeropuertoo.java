@@ -1,8 +1,8 @@
 package com.mycompany.mongoaeropuertoo;
 
-import daos.DAOAerolineas;
+import datos.DAOAerolineas;
 import java.util.ArrayList;
-import modelos.Aerolinea;
+import objetos.Aerolinea;
 
 /**
  *
@@ -12,13 +12,13 @@ public class MongoAeropuertoo {
 
     public static void main(String[] args) {
         DAOAerolineas aeroDAO = new DAOAerolineas();
-        ArrayList<Aerolinea> lista = aeroDAO.obtenerAerolineas();
+//        ArrayList<Aerolinea> lista = aeroDAO.obtenerAerolineas();
         Aerolinea aerolinea = new Aerolinea("Aeromexico", "MX", "MXN", true); 
         
         
-        for (Aerolinea arg : lista) {
-            System.out.println(arg.toString());
-        }
+//        for (Aerolinea arg : lista) {
+//            System.out.println(arg.toString());
+//        }
         
        
 //        aeroDAO.agregarAerolinea(aerolinea);

@@ -1,4 +1,4 @@
-package modelos;
+package objetos;
 
 import org.bson.types.ObjectId;
 
@@ -30,6 +30,11 @@ public class Aerolinea {
         this.moneda = moneda;
         this.economica = economica;
     }
+
+    public Aerolinea(ObjectId id) {
+        this.id = id;
+    }
+    
     
     public ObjectId getId() {
         return id;
